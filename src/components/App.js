@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../App.css';
 import Form from './Form';
 import List from './List';
 
@@ -7,8 +6,8 @@ class App extends Component {
     state = {
         inputValue: "",
         todos:[
-            {value: 'Clean the Kitchen', done:false},
-            {value: 'Wash the car', done:true}
+            {value: 'Figma UI for Dribbble', done:false},
+            {value: 'Youtube Video for Friday', done:true}
         ]
     };
 
@@ -35,7 +34,8 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
+            <div className="App container mt-5">
+
                 <Form
                     handleChanges = {this.handleChanges}
                     inputValue = {this.state.inputValue}
